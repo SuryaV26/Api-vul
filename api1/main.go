@@ -53,7 +53,6 @@ func getUser(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	// Add the flag to the response if the bypass token is correct
 	if id == 4 && Token == encodedID {
 		user.Flag = "flag{API1-BOLA}"
 	}
